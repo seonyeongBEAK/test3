@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adu.test3.WriteActivity">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:id="@+id/scrolltop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@color/white"
+                                android:src="@drawable/logo_title" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@color/white"
+                                android:fontFamily="@font/cafe24shiningstar"
+                                android:gravity="left|center_vertical"
+                                android:text="로봇 코딩 교육 | 아두정복"
+                                android:textColor="#6C8173"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/stroke_unbottom"
+                            android:elevation="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageButton
+                                    android:id="@+id/btn_compile"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/button_back"
+                                    android:onClick="onCompile"
+                                    android:src="@drawable/ic_baseline_done_24" />
+
+                                <ImageButton
+                                    android:id="@+id/btn_send"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:onClick="Onsend"
+                                    android:background="@drawable/button_back"
+                                    android:src="@drawable/ic_baseline_forward_24" />
+
+                                <TextView
+                                    android:id="@+id/text_color"
+                                    android:layout_width="5dp"
+                                    android:layout_height="5dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="10dp"
+                                    android:visibility="invisible"
+                                    android:background="#00FFFFFF" />
+
+                                <TextView
+                                    android:id="@+id/tvBluetoothStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:fontFamily="@font/cafe24oneprettynight"
+                                    android:text="status"
+                                    android:textColor="#534F49"
+                                    android:visibility="invisible"
+                                    android:textSize="10sp" />
+
+                                <ImageButton
+                                    android:id="@+id/btnBluetoothOff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:background="#00FFFFFF"
+                                    android:elevation="10dp"
+                                    android:padding="10dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_baseline_bluetooth_disabled_24"
+                                    android:textColor="#C67B1A"
+                                    android:visibility="invisible"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#FAF6DB"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_backgorund_disable"
+                                android:fontFamily="@font/cafe24oneprettynight"
+                                android:gravity="center"
+                                android:text="Edit"
+                                android:textColor="#FF9800"
+                                android:textSize="18sp" />
+
+                            <ImageButton
+                                android:id="@+id/btn_list"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginLeft="250dp"
+                                android:background="@drawable/background_btn"
+                                android:onClick="onList"
+                                android:padding="2dp"
+                                android:visibility="invisible"
+                                android:src="@drawable/ic_baseline_cached_24" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical"
+                            android:paddingBottom="30dp">
+
+                            <EditText
+                                android:id="@+id/tvSendData"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/cafe24oneprettynight"
+                                android:gravity="top"
+                                android:hint="내용을 작성해주세요."
+                                android:inputType="textPersonName"
+                                android:textColor="@color/col13" />
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/count"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:background="@drawable/round_backgorund_result"-->
+<!--                                android:gravity="center"-->
+<!--                                android:padding="10dp"-->
+<!--                                android:text="0"-->
+<!--                                android:textColor="#EC8226"-->
+<!--                                android:textSize="12sp"-->
+<!--                                android:textStyle="bold" />-->
+
+                            <TextView
+                                android:id="@+id/send_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:elevation="4dp"
+                                android:fontFamily="@font/cafe24oneprettynight"
+                                android:gravity="left"
+                                android:paddingStart="10dp"
+                                android:paddingTop="30dp"
+                                android:paddingBottom="20dp"
+                                android:text="데이터 전송기록 없음"
+                                android:textColor="#8A847E" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/scrolltop"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_compile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="#FDE8A8"
+                android:fontFamily="@font/cafe24oneprettynight"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text=""
+                android:textColor="@color/col13"/>
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tvReceiveData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:fontFamily="@font/cafe24oneprettynight"
+                    android:paddingStart="5dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="5dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/col3"
+                    android:textSize="13sp" />
+            </ScrollView>
+
+                <TextView
+                    android:id="@+id/bottom_tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#FFC05E"
+                    android:gravity="right"
+                    android:text="Arduino/App \t"
+                    android:textColor="#5C564F"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FEFFF7"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/logo_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/text" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left|center_vertical"
+                    android:text=" 대표명 : 윤영철 \t 회사명 : 아두정복 \n 전화번호 : 010-2772-7870 \t 이메일 : yoution57@gmail.com \n Web: www.아두정복.com"
+                    android:textColor="@color/col13"
+                    android:textSize="9sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

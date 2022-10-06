@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC05E"
+    tools:context="com.adu.test3.IntroActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/arduino_uno_r3"
+            android:tintMode="src_atop"
+            app:tint="#99FFEB3B" />
+        <!--        https://prinsta.io/electronics-lab/make-arduino-development-board/-->
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="280dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="A Du Jung Bock"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:fontFamily="@font/cafe24oneprettynight"
+            android:textStyle="" />
+
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:background="@drawable/layout_background"-->
+        <!--            android:fontFamily="@font/cafe24shiningstar"-->
+        <!--            android:gravity="center"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:text="A Du Jung Bock"-->
+        <!--            android:textColor="#FF9800"-->
+        <!--            android:textSize="40dp" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cafe24shiningstar"
+            android:text="교육 기반 코딩 메이커스"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/cafe24shiningstar"
+            android:text="Education-Based Coding Maker"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

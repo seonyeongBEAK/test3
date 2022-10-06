@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adu.test3.MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/main_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cafe24shiningstar"
+                android:gravity="left|center_vertical"
+                android:layout_marginTop="5dp"
+                android:text="www.아두정복.com"
+                android:textColor="#7C766F"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_shop"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_baseline_shopping_bag_24" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/youtube"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/youtube" />
+
+                    <ImageButton
+                        android:id="@+id/instagram"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/instagram" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/cafe24oneprettynight"
+                android:gravity="center"
+                android:text="A Du Jung Bock"
+                android:textColor="#514D4D"
+                android:textSize="30dp"
+                android:textStyle="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/cafe24shiningstar"
+                android:text="교육 기반 코딩 메이커스"
+                android:textColor="#4E4C4C"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/cafe24shiningstar"
+                android:text="Education-Based Coding Maker"
+                android:textColor="#5E5C5C"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/cafe24shiningstar"
+                    android:text="교육용 프로그램"
+                    android:textColor="#F1CF6B"
+                    android:textSize="18dp" />
+
+            <GridLayout
+                android:id="@+id/btn_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:columnCount="2">
+
+                <Button
+                    android:id="@+id/btn_write"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FFF9C5"
+                    android:drawableTop="@drawable/ic_baseline_edit_24"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Write"
+                    android:textColor="#938F89"
+                    android:textSize="36px" />
+
+                <Button
+                    android:id="@+id/btn_led"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FFFEF4"
+                    android:drawableTop="@drawable/ic_control_camera_24"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Led"
+                    android:textColor="#938F89"
+                    android:textSize="36px" />
+
+                <Button
+                    android:id="@+id/btn_car"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FDF9DF"
+                    android:drawableTop="@drawable/ic_baseline_car_24"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="car"
+                    android:textColor="#938F89"
+                    android:textSize="36px" />
+            </GridLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_background_home"
+            android:elevation="15dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_keyboard_arrow_up_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button_visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:backgroundTint="#FFCA7C"
+                    android:elevation="15dp"
+                    android:fontFamily="@font/cafe24shiningstar"
+                    android:text="OPEN "
+                    android:textColor="#FFFFFF"
+                    android:padding="10dp"
+                    android:textSize="23dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

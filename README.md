@@ -42,7 +42,6 @@ AduJungBock Smart_Application
    - Bluetooth Connect : 블루투스 리스트 출력, HC-06(AduinoNano에 연결된 블루투스 모듈) 선택 후 연결 성공 시 MainActivity로 이동
    - MainActivity로 이동 : 블루투스 서비스로 연결 MainActivity로 이동, 각 컨텐츠 선택 화면
    
-<img src="./screenshot/Initial1.jpg" width="300">    <img src="./screenshot/Initial2.jpg" width="300">
 - [MainActivity.java]
 , [activity_main.xml]
    

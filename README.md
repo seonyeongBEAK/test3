@@ -30,7 +30,7 @@ AduJungBock Smart_Application
 - Galaxy ZFlip3 (android 12)
 
 ## 2. 구성 및 설명
-- [IntroActivity.java](https://github.com/seonyeongBEAK/test3/blob/master/app/src/main/java/com/adu/test3/InitialActivity.java) 
+- [IntroActivity.java](https://github.com/seonyeongBEAK/test3/blob/master/app/src/main/java/com/adu/test3/IntroActivity.java) 
 , [activity_intro.xml](https://github.com/seonyeongBEAK/test3/blob/master/app/src/main/res/layout/activity_intro.xml)
    - 첫화면을 나타내는 인트로 액티비티
    - 3초동안 앱 첫 화면 보여주고 블루투스 연결 할 수 있는 InitialActivity 화면으로 이동

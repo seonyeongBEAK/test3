@@ -54,6 +54,7 @@ AduJungBock Smart_Application
 
 ## 3. 저작권 및 출처
    - image [aduino board : https://prinsta.io/electronics-lab/make-arduino-development-board]
+   - icon [https://www.flaticon.com/free-icons/]
    - lottie [https://lottiefiles.com/] : https://assets4.lottiefiles.com/packages/lf20_m71u1phy.json
    - font [카페 24 한글폰트] : https://fonts.cafe24.com/
    - android studio vector Asset

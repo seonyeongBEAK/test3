@@ -102,68 +102,60 @@
                 android:text="준비중인 서비스입니다."
                 android:visibility="invisible"/>
 
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/toast_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="1"
+                android:gravity="center"
                 android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:gravity="left"
-                    android:orientation="horizontal">
-                    <ImageButton
-                        android:id="@+id/btn_unconnect"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="#00FFFFFF"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="50dp"
-                        android:elevation="10dp"
-                        android:scaleType="fitCenter"
-                        android:padding="10dp"
-                        android:src="@drawable/ic_baseline_bluetooth_disabled_24"
-                        android:textColor="#C67B1A"
-                        android:visibility="invisible"
-                        android:textStyle="bold" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.5"
-                    android:gravity="right"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/text_color"
-                        android:layout_width="5dp"
-                        android:layout_height="5dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_gravity="center"
-                        android:background="#00FFFFFF" />
-
-                    <ImageButton
-                        android:id="@+id/btn_connect"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:background="#00FFFFFF"
-                        android:layout_marginRight="50dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="10dp"
-                        android:elevation="10dp"
-                        android:scaleType="fitCenter"
-                        android:padding="10dp"
-                        android:src="@drawable/ic_baseline_bluetooth_24"
-                        android:textColor="#C67B1A"
-                        android:visibility="invisible"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/toast"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/toast_background"
+                    android:visibility="invisible"
+                    android:textColor="#85898A"/>
+                <TextView
+                    android:id="@+id/stop_toast"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:background="@drawable/stop_toast_background"
+                    android:visibility="invisible"
+                    android:textColor="#85898A"/>
+                <TextView
+                    android:id="@+id/white"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:textColor="#85898A"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:gravity="center"
+                    android:text="신호등 끄기"
+                    android:layout_marginEnd="25dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/a1"/>
+                <Button
+                    android:id="@+id/trafficOff"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="10dp"
+                    android:background="@drawable/ic_baseline_highlight_off_24" />
+            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -181,7 +173,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="5dp"
                     android:backgroundTint="#F1EFE2"
                     android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
                     android:elevation="20dp"
@@ -192,6 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:padding="5dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -215,6 +208,7 @@
                         android:textColor="#5E6263"
                         android:textSize="11sp" />
 
+
                     <ImageButton
                         android:id="@+id/btn_right"
                         android:layout_width="80dp"
@@ -232,7 +226,7 @@
                     android:layout_width="80dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:backgroundTint="#F1EFE2"
                     android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
                     android:elevation="20dp"
@@ -250,7 +244,8 @@
                         android:layout_width="70dp"
                         android:layout_height="60dp"
                         android:layout_gravity="right"
-                        android:backgroundTint="#DDFF9800"
+                        android:backgroundTint="#FFA721"
+                        android:fontFamily="@font/cafe24ohsquareair"
                         android:elevation="20dp"
                         android:text="Z"
                         android:textStyle="bold" />
@@ -262,7 +257,8 @@
                         android:layout_gravity="right"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="10dp"
-                        android:backgroundTint="#DDFF9800"
+                        android:fontFamily="@font/cafe24ohsquareair"
+                        android:backgroundTint="#FFA721"
                         android:elevation="20dp"
                         android:text="X"
                         android:textStyle="bold" />

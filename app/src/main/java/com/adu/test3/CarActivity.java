@@ -12,14 +12,15 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.test3.R;
+
 
 public class CarActivity extends AppCompatActivity {
     Handler mHandler;
+
     ImageButton  btn_go, btn_back, btn_left, btn_right;
-    Button btn_Z, btn_X;
-    TextView control;
+    Button btn_Z, btn_X, trafficOff;
+    TextView control, toast, stop_toast, white;
     private final String TAG = "TEST+Main_activity";    // 디버깅을 위한 Log 태그
 
     public static final int MODE_REQUEST = 1 ;
@@ -32,6 +33,7 @@ public class CarActivity extends AppCompatActivity {
     StringBuffer mOutStringBuffer = new StringBuffer("");
     String[] sensor;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +41,21 @@ public class CarActivity extends AppCompatActivity {
         bluetoothServiceMain = InitialActivity.btService;
 
         control = findViewById(R.id.control);
+        toast = findViewById(R.id.toast);
+        stop_toast = findViewById(R.id.stop_toast);
+        white = findViewById(R.id.white);
+        white.setVisibility(View.VISIBLE);
+        toast.setVisibility(View.INVISIBLE);
+        stop_toast.setVisibility(View.INVISIBLE);
+        trafficOff = findViewById(R.id.trafficOff);
+        trafficOff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                white.setVisibility(View.VISIBLE);
+                toast.setVisibility(View.INVISIBLE);
+                stop_toast.setVisibility(View.INVISIBLE);
+            }
+        });
 
         btn_back = findViewById(R.id.btn_back);
         btn_left = findViewById(R.id.btn_left);
@@ -89,49 +106,39 @@ public class CarActivity extends AppCompatActivity {
                     mHandler = new Handler();
                     if (v.getId() == R.id.btn_go) {
                         mHandler.postDelayed(goAction, 100);
-                        control.setVisibility(View.INVISIBLE);
                     }  else if (v.getId() == R.id.btn_back) {
                         mHandler.postDelayed(backAction, 100);
-                        control.setVisibility(View.INVISIBLE);
                     } else if (v.getId() == R.id.btn_left) {
                         mHandler.postDelayed(leftAction, 100);
-                        control.setVisibility(View.INVISIBLE);
                     } else if (v.getId() == R.id.btn_right) {
                         mHandler.postDelayed(rightAction, 100);
-                        control.setVisibility(View.INVISIBLE);
                     } else if (v.getId() == R.id.btn_X) {
                         mHandler.postDelayed(xAction, 100);
-                        control.setVisibility(View.INVISIBLE);
                     } else if (v.getId() == R.id.btn_Z) {
                         mHandler.postDelayed(zAction, 100);
-                        control.setVisibility(View.INVISIBLE);
                     }break;
                 case MotionEvent.ACTION_UP:
                     if (mHandler == null) return true;
                     if (v.getId() == R.id.btn_go) {
                         mHandler.removeCallbacks(goAction);
                         mHandler.post(stopAction);
-                        control.setVisibility(View.VISIBLE);
+                        stop_toast.setVisibility(View.VISIBLE);
+                        toast.setVisibility(View.INVISIBLE);
                     }else if (v.getId() == R.id.btn_back) {
                         mHandler.removeCallbacks(backAction);
                         mHandler.post(stopAction);
-                        control.setVisibility(View.VISIBLE);
                     }else if (v.getId() == R.id.btn_left) {
                         mHandler.removeCallbacks(leftAction);
                         mHandler.post(stopAction);
-                        control.setVisibility(View.VISIBLE);
                     }else if (v.getId() == R.id.btn_right) {
                         mHandler.removeCallbacks(rightAction);
                         mHandler.post(stopAction);
-                        control.setVisibility(View.VISIBLE);
                     }else if (v.getId() == R.id.btn_X) {
                         mHandler.removeCallbacks(xAction);
                         mHandler.post(stopAction);
-                        control.setVisibility(View.VISIBLE);
                     }else if (v.getId() == R.id.btn_Z) {
                         mHandler.removeCallbacks(zAction);
                         mHandler.post(stopAction);
-                        control.setVisibility(View.VISIBLE);
                     }
                     mHandler = null;
                     break;
@@ -140,70 +147,141 @@ public class CarActivity extends AppCompatActivity {
         }
         Runnable stopAction = new Runnable() {
             @Override public void run() {
-                ClickHandlerStop();
+                stop_toast.setVisibility(View.VISIBLE);
+                toast.setVisibility(View.INVISIBLE);
+                white.setVisibility(View.INVISIBLE);
+                stop_toast.setText("STOP");
+                sendMessage("s",MESSAGE_WRITE);
+//                ClickHandlerStop();
             }
         };
         Runnable goAction = new Runnable() {
             @Override public void run() {
                 mHandler.postDelayed(this, 100);
-                ClickHandlerGo();
+                toast.setVisibility(View.VISIBLE);
+                stop_toast.setVisibility(View.INVISIBLE);
+                white.setVisibility(View.INVISIBLE);
+                toast.setText("GOING");
+                sendMessage("g",MESSAGE_WRITE);
+//                ClickHandlerGo();
             }
         };
         Runnable backAction = new Runnable() {
             @Override public void run() {
                 mHandler.postDelayed(this, 100);
-                ClickHandlerBack();
+                toast.setVisibility(View.VISIBLE);
+                stop_toast.setVisibility(View.INVISIBLE);
+                white.setVisibility(View.INVISIBLE);
+                toast.setText("BACK");
+                sendMessage("k",MESSAGE_WRITE);
+//                ClickHandlerBack();
             }
         };
         Runnable leftAction = new Runnable() {
             @Override public void run() {
                 mHandler.postDelayed(this, 100);
-                ClickHandlerLeft();
+                toast.setVisibility(View.VISIBLE);
+                stop_toast.setVisibility(View.INVISIBLE);
+                white.setVisibility(View.INVISIBLE);
+                toast.setText("LEFT");
+                sendMessage("l",MESSAGE_WRITE);
+//                ClickHandlerLeft();
             }
         };
         Runnable rightAction = new Runnable() {
             @Override public void run() {
                 mHandler.postDelayed(this, 100);
-                ClickHandlerRight();
+//                ClickHandlerRight();
+                toast.setVisibility(View.VISIBLE);
+                stop_toast.setVisibility(View.INVISIBLE);
+                white.setVisibility(View.INVISIBLE);
+                toast.setText("RIGHT");
+                sendMessage("r",MESSAGE_WRITE);
             }
         };
         Runnable xAction = new Runnable() {
             @Override public void run() {
                 mHandler.postDelayed(this, 100);
-                ClickHandlerX();
+                toast.setVisibility(View.VISIBLE);
+                stop_toast.setVisibility(View.INVISIBLE);
+                white.setVisibility(View.INVISIBLE);
+                toast.setText("X");
+                sendMessage("x",MESSAGE_WRITE);
+//                ClickHandlerX();
             }
         };
         Runnable zAction = new Runnable() {
             @Override public void run() {
                 mHandler.postDelayed(this, 100);
-                ClickHandlerZ();
+                toast.setVisibility(View.VISIBLE);
+                stop_toast.setVisibility(View.INVISIBLE);
+                white.setVisibility(View.INVISIBLE);
+                toast.setText("Z");
+                sendMessage("z",MESSAGE_WRITE);
+//                ClickHandlerZ();
             }
         };
     }
 
     private void ClickHandlerStop() {
-// Toast 객체 생성
-        Toast toast = Toast.makeText(this, "  STOP  ", Toast.LENGTH_SHORT);
-// 위치설정, Gravity - 기준지정(상단,왼쪽 기준 0,0) / xOffset, yOffset - Gravity기준으로 위치 설정
-        toast.setGravity( Gravity.CENTER_HORIZONTAL,0 ,-10);
-        View toastView = toast.getView();
-        toastView.setBackgroundResource(R.drawable.stop_toast_background);
-        // Toast 보여주기
-        toast.show();
-        sendMessage("s",MESSAGE_WRITE);
+//// Toast 객체 생성
+//        Toast toast = Toast.makeText(this, "  STOP  ", Toast.LENGTH_SHORT);
+//// 위치설정, Gravity - 기준지정(상단,왼쪽 기준 0,0) / xOffset, yOffset - Gravity기준으로 위치 설정
+//        toast.setGravity( Gravity.CENTER_HORIZONTAL,0 ,-10);
+//        View toastView = toast.getView();
+//            toastView.setBackgroundResource(R.drawable.stop_toast_background);
+//        // Toast 보여주기
+//        toast.show();
+//        sendMessage("s",MESSAGE_WRITE);
 
+//        토스트 모양을 정의하고 있는 레이아웃을 인플레이션 한다.
+        // 기존 토스트 모양을 작성한 toastborder.xml로 인플레이션 한다.
+//         LayoutInflater inflater = getLayoutInflater();
+//         View layout = inflater.inflate(R.layout.layout_stop_toast,
+//         (ViewGroup)findViewById(R.id.toast_layout_root));
+//        // 레이아웃의 텍스트뷰에 보여줄 문자열을 설정한다.
+//         TextView stop = (TextView)layout.findViewById(R.id.stop);
+//         stop.setText("STOP");
+//        // 토스트 객체 만들기
+//        Toast toast = Toast.makeText(this, " STOP ", Toast.LENGTH_SHORT);
+////         Toast toast = new Toast(MainActivity.this);
+//        // 토스트가 출력될 위치를 지정
+//        // x,y 좌표는 CENTER 의 위치에서 시작되는 좌표임
+//         toast.setGravity(Gravity.CENTER, 0, -670);
+//        // 토스트에 뷰를 설정
+//         toast.setView(layout);
+//        // 토스트 부여주기
+//         toast.show();
+//        sendMessage("s",MESSAGE_WRITE);
     }
     private void ClickHandlerGo() {
-// Toast 객체 생성
-        Toast toast = Toast.makeText(this, " GOING ", Toast.LENGTH_SHORT);
-// 위치설정, Gravity - 기준지정(상단,왼쪽 기준 0,0) / xOffset, yOffset - Gravity기준으로 위치 설정
-        toast.setGravity( Gravity.CENTER_HORIZONTAL,0 ,-10);
-        View toastView = toast.getView();
-        toastView.setBackgroundResource(R.drawable.toast_background);
-        // Toast 보여주기
-        toast.show();
-        sendMessage("g",MESSAGE_WRITE);
+//// Toast 객체 생성
+//        Toast toast = Toast.makeText(this, " GOING ", Toast.LENGTH_SHORT);
+//// 위치설정, Gravity - 기준지정(상단,왼쪽 기준 0,0) / xOffset, yOffset - Gravity기준으로 위치 설정
+//        toast.setGravity( Gravity.CENTER_HORIZONTAL,0 ,-10);
+//        View toastView = toast.getView();
+//            toastView.setBackgroundResource(R.drawable.toast_background);
+//
+//        // Toast 보여주기
+//        toast.show();
 
+//        LayoutInflater inflater = getLayoutInflater();
+//        View layout = inflater.inflate(R.layout.layout_toast,
+//                (ViewGroup)findViewById(R.id.toast_layout_root));
+//        // 레이아웃의 텍스트뷰에 보여줄 문자열을 설정한다.
+//        TextView stop = (TextView)layout.findViewById(R.id.toast);
+//        stop.setText("GOING");
+//        // 토스트 객체 만들기
+//        Toast toast = Toast.makeText(this, " GOING ", Toast.LENGTH_SHORT);
+////         Toast toast = new Toast(MainActivity.this);
+//        // 토스트가 출력될 위치를 지정
+//        // x,y 좌표는 CENTER 의 위치에서 시작되는 좌표임
+//        toast.setGravity(Gravity.CENTER, 0, -670);
+//        // 토스트에 뷰를 설정
+//        toast.setView(layout);
+//        // 토스트 부여주기
+//        toast.show();
+//        sendMessage("g",MESSAGE_WRITE);
     }
     private void ClickHandlerBack() {
 // Toast 객체 생성
@@ -219,7 +297,7 @@ public class CarActivity extends AppCompatActivity {
     }
     private void ClickHandlerLeft() {
 // Toast 객체 생성
-        Toast toast = Toast.makeText(this, "  LEFT  ", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, "   LEFT   ", Toast.LENGTH_SHORT);
 // 위치설정, Gravity - 기준지정(상단,왼쪽 기준 0,0) / xOffset, yOffset - Gravity기준으로 위치 설정
         toast.setGravity( Gravity.CENTER_HORIZONTAL,0 ,-10);
         View toastView = toast.getView();
@@ -243,7 +321,7 @@ public class CarActivity extends AppCompatActivity {
     }
     private void ClickHandlerX() {
 // Toast 객체 생성
-        Toast toast = Toast.makeText(this, "     X      ", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, "      X       ", Toast.LENGTH_SHORT);
 // 위치설정, Gravity - 기준지정(상단,왼쪽 기준 0,0) / xOffset, yOffset - Gravity기준으로 위치 설정
         toast.setGravity( Gravity.CENTER_HORIZONTAL,0 ,-10);
         View toastView = toast.getView();

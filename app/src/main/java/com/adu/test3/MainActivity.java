@@ -146,8 +146,8 @@ public class MainActivity extends AppCompatActivity {
 //        bluetoothServiceMain = InitialActivity.btService;
 //        bluetoothServiceMain.set(this, handler);
 
-        btn_shop = findViewById(R.id.btn_shop);
-        btn_shop.setOnClickListener(view -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.xn--hu1bz7nj6gp2c.com/"))));
+//        btn_shop = findViewById(R.id.btn_shop);
+//        btn_shop.setOnClickListener(view -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.xn--hu1bz7nj6gp2c.com/"))));
         instagram = findViewById(R.id.instagram);
         instagram.setOnClickListener(view -> startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.instagram.com/a_du_jung_bok/?hl=ko"))));
         youtube = findViewById(R.id.youtube);

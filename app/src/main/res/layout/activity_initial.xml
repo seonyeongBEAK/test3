@@ -7,241 +7,330 @@
     android:background="#FFC05E"
     tools:context="com.adu.test3.InitialActivity">
 
-<!--    &lt;!&ndash;    <Button&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:id="@+id/bluetoothOn"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_width="150dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentLeft="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentEnd="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentRight="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginStart="139dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginLeft="139dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginTop="12dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginEnd="139dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginRight="139dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:text="블루투스 켜기"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />&ndash;&gt;-->
+    <!--    &lt;!&ndash;    <Button&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:id="@+id/bluetoothOn"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_width="150dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentLeft="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentRight="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginStart="139dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginLeft="139dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginTop="12dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginEnd="139dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginRight="139dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:text="블루투스 켜기"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />&ndash;&gt;-->
 
-<!--    &lt;!&ndash;    <TextView&ndash;&gt;-->
-<!--&lt;!&ndash;        android:id="@+id/Content"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_marginTop="330dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:fontFamily="@font/cafe24shiningstar"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:gravity="center"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:text="블루투스 연결하기"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:textSize="20dp" />&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;    <Button&ndash;&gt;-->
-<!--&lt;!&ndash;        android:id="@+id/bluetoothList"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="100dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="200dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_below="@id/Content"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_alignParentEnd="true"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_alignParentBottom="true"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:backgroundTint="#FFD39A"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:elevation="10dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:fontFamily="@font/cafe24ohsquareair"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:gravity="center"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:padding="10dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:text="START"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:textSize="25dp"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:textStyle="bold" />&ndash;&gt;-->
-
-<!--    <LinearLayout-->
-<!--        android:id="@+id/title_layout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginStart="0dp"-->
-<!--        android:layout_marginTop="0dp"-->
-<!--        android:layout_marginEnd="0dp"-->
-<!--        android:layout_marginBottom="0dp"-->
-<!--        android:gravity="center_horizontal"-->
-<!--        android:orientation="vertical"-->
-<!--        android:padding="20dp">-->
-
-<!--        &lt;!&ndash;        <LinearLayout&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_alignParentStart="true"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_alignParentTop="true"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_alignParentEnd="true"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:background="@drawable/shadow"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:orientation="horizontal"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:padding="20dp">&ndash;&gt;-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/title"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="60dp"-->
-<!--            android:fontFamily="@font/cafe24shiningstar"-->
-<!--            android:gravity="center"-->
-<!--            android:text="아두정복"-->
-<!--            android:textColor="#FFC107"-->
-<!--            android:textSize="55dp" />-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView"-->
-<!--            android:layout_width="80dp"-->
-<!--            android:layout_height="100dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            app:srcCompat="@drawable/ic_baseline_bluetooth_24_green" />-->
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="left"-->
-<!--            android:layout_marginLeft="50dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:fontFamily="@font/cafe24sukssuk"-->
-<!--            android:gravity="left"-->
-<!--            android:text="시작하기에 앞서"-->
-<!--            android:textColor="#A19A97"-->
-<!--            android:textSize="18dp" />-->
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="left"-->
-<!--            android:layout_marginLeft="50dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:fontFamily="@font/cafe24sukssuk"-->
-<!--            android:gravity="left"-->
-<!--            android:text="블루투스 페어링 먼저 해주세요!"-->
-<!--            android:textColor="#A19A97"-->
-<!--            android:textSize="18dp" />-->
-
-<!--        &lt;!&ndash;    <a href="https://www.flaticon.com/kr/free-icons/" title="보내다 아이콘">보내다 아이콘  제작자: Pixel perfect - Flaticon</a>&ndash;&gt;-->
-<!--        &lt;!&ndash;            <ImageView&ndash;&gt;-->
-<!--        &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
-<!--        &lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
-<!--        &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
-<!--        &lt;!&ndash;                app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />&ndash;&gt;-->
-
-<!--        &lt;!&ndash;            <TextView&ndash;&gt;-->
-<!--        &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
-<!--        &lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
-<!--        &lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
-<!--        &lt;!&ndash;                android:layout_weight="0.7"&ndash;&gt;-->
-<!--        &lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
-<!--        &lt;!&ndash;                android:text="블루투스 페어링"&ndash;&gt;-->
-<!--        &lt;!&ndash;                android:textColor="#B1AB9F" />&ndash;&gt;-->
-
-<!--        <Button-->
-<!--            android:id="@+id/bt_setting"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:backgroundTint="#D5D3CD"-->
-<!--            android:fontFamily="@font/cafe24ohsquareair"-->
-<!--            android:text="setting"-->
-<!--            android:textStyle="bold" />-->
-<!--        &lt;!&ndash;        android:backgroundTint="#F8E899"&ndash;&gt;-->
+    <!--    &lt;!&ndash;    <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/Content"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_marginTop="330dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:fontFamily="@font/cafe24shiningstar"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:text="블루투스 연결하기"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:textSize="20dp" />&ndash;&gt;-->
 
 
-<!--        <TextView-->
-<!--            android:id="@+id/title_right"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="left"-->
-<!--            android:layout_marginLeft="50dp"-->
-<!--            android:layout_marginTop="50dp"-->
-<!--            android:fontFamily="@font/cafe24sukssuk"-->
-<!--            android:gravity="center"-->
-<!--            android:text="설정까지 모두 완료 했다면"-->
-<!--            android:textColor="#8E8580"-->
-<!--            android:textSize="17dp" />-->
+    <!--&lt;!&ndash;    <Button&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/bluetoothList"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="100dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="200dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_below="@id/Content"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_alignParentBottom="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:backgroundTint="#FFD39A"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:elevation="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:fontFamily="@font/cafe24ohsquareair"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:padding="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:text="START"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:textSize="25dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:textStyle="bold" />&ndash;&gt;-->
 
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:fontFamily="@font/cafe24sukssuk"-->
-<!--            android:text=" 시작!"-->
-<!--            android:textColor="#81756D"-->
-<!--            android:textSize="17dp" />-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/title_layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="0dp"-->
+    <!--        android:layout_marginTop="0dp"-->
+    <!--        android:layout_marginEnd="0dp"-->
+    <!--        android:layout_marginBottom="0dp"-->
+    <!--        android:gravity="center_horizontal"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="20dp">-->
+
+    <!--        &lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_alignParentStart="true"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:background="@drawable/shadow"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:orientation="horizontal"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:padding="20dp">&ndash;&gt;-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/title"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="60dp"-->
+    <!--            android:fontFamily="@font/cafe24shiningstar"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="아두정복"-->
+    <!--            android:textColor="#FFC107"-->
+    <!--            android:textSize="55dp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView"-->
+    <!--            android:layout_width="80dp"-->
+    <!--            android:layout_height="100dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            app:srcCompat="@drawable/ic_baseline_bluetooth_24_green" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="left"-->
+    <!--            android:layout_marginLeft="50dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:fontFamily="@font/cafe24sukssuk"-->
+    <!--            android:gravity="left"-->
+    <!--            android:text="시작하기에 앞서"-->
+    <!--            android:textColor="#A19A97"-->
+    <!--            android:textSize="18dp" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="left"-->
+    <!--            android:layout_marginLeft="50dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:fontFamily="@font/cafe24sukssuk"-->
+    <!--            android:gravity="left"-->
+    <!--            android:text="블루투스 페어링 먼저 해주세요!"-->
+    <!--            android:textColor="#A19A97"-->
+    <!--            android:textSize="18dp" />-->
+
+    <!--        &lt;!&ndash;    <a href="https://www.flaticon.com/kr/free-icons/" title="보내다 아이콘">보내다 아이콘  제작자: Pixel perfect - Flaticon</a>&ndash;&gt;-->
+    <!--        &lt;!&ndash;            <ImageView&ndash;&gt;-->
+    <!--        &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+    <!--        &lt;!&ndash;                app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />&ndash;&gt;-->
+
+    <!--        &lt;!&ndash;            <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+    <!--        &lt;!&ndash;                android:layout_weight="0.7"&ndash;&gt;-->
+    <!--        &lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+    <!--        &lt;!&ndash;                android:text="블루투스 페어링"&ndash;&gt;-->
+    <!--        &lt;!&ndash;                android:textColor="#B1AB9F" />&ndash;&gt;-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/bt_setting"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:backgroundTint="#D5D3CD"-->
+    <!--            android:fontFamily="@font/cafe24ohsquareair"-->
+    <!--            android:text="setting"-->
+    <!--            android:textStyle="bold" />-->
+    <!--        &lt;!&ndash;        android:backgroundTint="#F8E899"&ndash;&gt;-->
 
 
-<!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:layout_marginTop="150dp"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:fontFamily="@font/cafe24shiningstar"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:text="시작하기"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:textColor="#B1AB9F"&ndash;&gt;-->
-<!--        &lt;!&ndash;            android:textSize="25dp" />&ndash;&gt;-->
-<!--        <Button-->
-<!--            android:id="@+id/bluetoothList"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:layout_marginEnd="20dp"-->
-<!--            android:layout_marginBottom="20dp"-->
-<!--            android:backgroundTint="#FFD89D"-->
-<!--            android:fontFamily="@font/cafe24ohsquareair"-->
-<!--            android:gravity="center"-->
-<!--            android:padding="15dp"-->
-<!--            android:text="Connect"-->
-<!--            android:textStyle="bold" />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/title_right"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="left"-->
+    <!--            android:layout_marginLeft="50dp"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:fontFamily="@font/cafe24sukssuk"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="설정까지 모두 완료 했다면"-->
+    <!--            android:textColor="#8E8580"-->
+    <!--            android:textSize="17dp" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:fontFamily="@font/cafe24sukssuk"-->
+    <!--            android:text=" 시작!"-->
+    <!--            android:textColor="#81756D"-->
+    <!--            android:textSize="17dp" />-->
 
 
-<!--    </LinearLayout>-->
-<!--    &lt;!&ndash;    <Button&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:id="@+id/edittest"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_below="@+id/test"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentLeft="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentEnd="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentRight="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginStart="157dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginLeft="157dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginTop="517dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginEnd="156dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginRight="156dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginBottom="54dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:text="Edit로 이동"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />&ndash;&gt;-->
+    <!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_marginTop="150dp"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:fontFamily="@font/cafe24shiningstar"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:text="시작하기"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textColor="#B1AB9F"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:textSize="25dp" />&ndash;&gt;-->
+    <!--        <Button-->
+    <!--            android:id="@+id/bluetoothList"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:layout_marginEnd="20dp"-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:backgroundTint="#FFD89D"-->
+    <!--            android:fontFamily="@font/cafe24ohsquareair"-->
+    <!--            android:gravity="center"-->
+    <!--            android:padding="15dp"-->
+    <!--            android:text="Connect"-->
+    <!--            android:textStyle="bold" />-->
 
-<!--    &lt;!&ndash;    <Button&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:id="@+id/test"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentLeft="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentEnd="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_alignParentRight="true"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginStart="121dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginLeft="121dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginTop="430dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginEnd="127dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:layout_marginRight="127dp"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:text="MainActivity로 이동"&ndash;&gt;-->
-<!--    &lt;!&ndash;        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />&ndash;&gt;-->
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        app:srcCompat="@drawable/playstore" />
+
+    <!--    </LinearLayout>-->
+    <!--    &lt;!&ndash;    <Button&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:id="@+id/edittest"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_below="@+id/test"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentLeft="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentRight="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginStart="157dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginLeft="157dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginTop="517dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginEnd="156dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginRight="156dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginBottom="54dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:text="Edit로 이동"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;    <Button&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:id="@+id/test"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentStart="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentLeft="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentEnd="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentRight="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginStart="121dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginLeft="121dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginTop="430dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginEnd="127dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginRight="127dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:text="MainActivity로 이동"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />&ndash;&gt;-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A D"
+                android:textColor="@color/white"
+                android:textSize="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="u"
+                android:textColor="@color/white"
+                android:textSize="80dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="J"
+                android:textColor="@color/white"
+                android:textSize="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ung"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:textColor="@color/white"
+                android:textSize="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ock"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+        </LinearLayout>
+        <!--        <com.airbnb.lottie.LottieAnimationView-->
+        <!--            android:layout_width="150dp"-->
+        <!--            android:layout_height="100dp"-->
+        <!--            app:lottie_rawRes="@raw/orange"-->
+        <!--            app:lottie_autoPlay="true"-->
+        <!--            app:lottie_loop="true" />-->
+        <!--    https://assets3.lottiefiles.com/packages/lf20_wcfvcuhn.json-->
+
+                <Button
+                    android:id="@+id/bluetoothList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="30dp"
+                    android:backgroundTint="#F3FFD494"
+                    android:fontFamily="@font/cafe24ohsquareair"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Connect"
+                    android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/goMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#F3FFD494"
+            android:fontFamily="@font/cafe24ohsquareair"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Main"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </RelativeLayout>

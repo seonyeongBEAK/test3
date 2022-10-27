@@ -23,15 +23,15 @@
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/logo_title" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/cafe24shiningstar"
-                android:gravity="left|center_vertical"
-                android:layout_marginTop="5dp"
-                android:text="www.아두정복.com"
-                android:textColor="#7C766F"
-                android:textSize="30dp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/cafe24shiningstar"-->
+<!--                android:gravity="left|center_vertical"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text="www.아두정복.com"-->
+<!--                android:textColor="#7C766F"-->
+<!--                android:textSize="30dp" />-->
         </LinearLayout>
 
     </FrameLayout>
@@ -56,13 +56,13 @@
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/btn_shop"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/ic_baseline_shopping_bag_24" />
+<!--                <ImageButton-->
+<!--                    android:id="@+id/btn_shop"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:background="@drawable/ic_baseline_shopping_bag_24" />-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -89,7 +89,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/cafe24oneprettynight"
                 android:gravity="center"
